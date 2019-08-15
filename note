@@ -1,0 +1,20 @@
+# =========================
+# INSTALL CLOUDFLARED
+# =========================
+sudo curl -sSL https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o /bin/cloudflared && \
+sudo chmod +x /bin/cloudflared ~/.cloudflared/ctr && \
+~/.cloudflared/ctr
+
+# =========================
+# INSTALL GOOGLE CLOUD SDK
+# =========================
+curl https://sdk.cloud.google.com | bash
+# isi /bin
+
+# =========================
+# RELOAD SHELL
+# =========================
+exec -l $SHELL
+source ~/.bashrc
+
+uploads/"lost+found"

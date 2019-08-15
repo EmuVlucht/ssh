@@ -1,0 +1,24 @@
+[phases.setup]
+aptPkgs = [
+  "imagemagick",
+  "ffmpeg",
+  "nano",
+  "potrace",
+  "tree",
+  "neofetch",
+  "wget",
+  "php",
+  "git",
+  "nodejs",
+  "npm",
+  "python3",
+  "python3-pip",
+  "python-is-python3",
+  "file",
+  "yarn",
+  "zip",
+  "unzip",
+  "screen",
+  "openssh-client",
+  "which"
+]

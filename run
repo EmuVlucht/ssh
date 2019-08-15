@@ -1,0 +1,19 @@
+screen -S namescreen
+
+bash -i -c 'target=$(date -d "23:00:00" +%s); now=$(date +%s); if [ $target -gt $now ]; then sleep $((target-now)); fi; gcs{1/2}' (pakai 0 atau tidak)
+
+keluar:
+crtl+a d
+
+liat screen:
+screen -ls
+
+masuk lagi:
+screen -r namescreen
+
+hapus screen:
+screen -r namescreen
+crtl+c
+exit atau crtl+a d
+screen -X -S namescreen quit
+screen -wipe

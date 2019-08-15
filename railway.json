@@ -1,0 +1,11 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "mkdir -p /app/data/uploads; bash elapsed_time_image.sh & bash apk_release_daemon.sh & cd /app/data/uploads; exec python -m uploadserver --bind 0.0.0.0 ${PORT:-8080}",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  }
+}
